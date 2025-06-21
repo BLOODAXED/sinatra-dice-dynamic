@@ -5,7 +5,7 @@ get("/") do
   erb(:homepage)
 end
 
-get("/dynamic/:number_of_dice/:dice_size") do
+get("/dice/:number_of_dice/:dice_size") do
   @rolls = []
   @num_dice = params["number_of_dice"].to_i
   @die_size = params["dice_size"].to_i
